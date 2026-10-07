@@ -1,0 +1,22 @@
+/bin/
+
+# Slack's official export (contains real message history, names, files) —
+# must never be committed to a public repo.
+/slack_export*/
+
+# Pipeline intermediate/output data — all derived from real Slack content.
+/data/raw/*
+!/data/raw/.gitkeep
+!/data/raw/dm/
+/data/raw/dm/*
+!/data/raw/dm/.gitkeep
+/data/normalized/*
+/data/classified/*
+/data/files/*
+!/data/normalized/.gitkeep
+!/data/classified/.gitkeep
+!/data/files/.gitkeep
+
+.env
+.env.*
+!.env.example
